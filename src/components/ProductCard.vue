@@ -14,6 +14,15 @@
     <br>
     <p> Стоимость за штуку - {{ price }} грн.</p>
     <p>Общая сумма покупки - {{totalPrice === 1?price:totalPrice}} грн.</p>
+    <div class="counter__wrapper">
+      <Counter 
+      :count="count"
+        :aviableCount="aviableCount"
+        @decreaseCount="decreaseCount"
+        @increaseCount="increaseCount"
+      
+      />
+    </div>
     </modal>
     
   
